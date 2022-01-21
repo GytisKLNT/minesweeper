@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+}
+
+.rezultatai{
+    display: flex;
+    justify-content: center;
+}
+
+.rezultatai div{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1{
+    font-size: 50px;
+    color: red;
+    display: none;
+}
+
+.minesweeper{
+    width: 420px;
+    height: 420px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.box{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: gray;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: green;
+
+}
+
+.bomba1, .bomba2, .bomba3, .bomba4, .bomba5, .bomba6, .bomba7, .bomba8{
+    width: 15px;
+    height: 15px;
+    background: url("bomb-solid.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+div .box:hover{
+    background-color: rgb(150, 150, 150);
+}
+
+.reload{
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    margin: 0 auto;
+}
